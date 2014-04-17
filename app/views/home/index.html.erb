@@ -1,0 +1,17 @@
+<h1>Flappy Bird Reborn</h1>
+
+<p>Ported from <%= link_to "codevinsky", "http://codevinsky.ghost.io" %>&apos;s tutorial:</p>
+<ul>
+  <%
+    1.upto(5).each{|n|
+  %>
+  <li>
+    <%= link_to "Tutorial #{n}", "http://codevinsky.ghost.io/phaser-2-0-tutorial-flappy-bird-part-#{n}/" %>
+  </li>
+  <%
+    }
+  %>
+</ul>
+
+<div id="game"></div>
+
