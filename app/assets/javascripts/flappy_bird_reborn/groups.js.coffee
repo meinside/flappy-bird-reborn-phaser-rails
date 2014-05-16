@@ -1,6 +1,6 @@
 # 'Flappy Bird Reborn'
 #
-# last update: 2014.04.16.
+# last update: 2014.05.16.
 #
 
 # Groups
@@ -94,9 +94,9 @@
 
       medal = null
       if score >= 10 && score < 20
-        medal = @game.add.sprite(-65 , 7, 'medals', 1)
+        medal = @game.add.sprite(-65 , 7, 'medals', 0)  # silver medal
       else if score >= 20
-        medal = @game.add.sprite(-65 , 7, 'medals', 0)
+        medal = @game.add.sprite(-65 , 7, 'medals', 1)  # gold medal
 
       @game.add.tween(@).to({y: 0}, 1000, Phaser.Easing.Bounce.Out, true)
 
